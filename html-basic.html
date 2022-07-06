@@ -52,14 +52,14 @@
 <hr>
 <dl>
   <dt>班级</dt>
-  <dd>三年二班</dd>
+    <dd>三年二班</dd>
   <dt>老师</dt>
-  <dd>张老师</dd>
-  <dd>李老师 </dd>
-  <dd>王老师</dd>
+    <dd>张老师</dd>
+    <dd>李老师 </dd>
+    <dd>王老师</dd>
   <dt>学生</dt>
-  <dd>小明</dd>
-  <dd>豆豆</dd>
+    <dd>小明</dd>
+    <dd>豆豆</dd>
 </dl>
 <hr>
 <form target="_blank" action="https://cn.bing.com/search">
@@ -76,19 +76,87 @@
     <input type="radio" name="gender">女
   </dd>
   <dt>年龄</dt>
-  <dd><input type="text" name="" id=""></dd>
-
-
+  <dd><select name="city">
+    <option label="请选择" disabled selected hidden></option>
+     <optgroup label="少年">
+       <option>1到6岁</option>
+       <option>6到12岁</option>
+     </optgroup>
+     <optgroup label="青年">
+       <option >13到15岁</option>
+       <option >16到18岁</option>
+     </optgroup>
+     <optgroup label="少年">
+       <option>1到6岁</option>
+       <option>6到12岁</option>
+      </optgroup>
+  </select></dd>
+  <dt>生日</dt>
+    <dd>
+      <input type="date" value="2021-11-04">
+    </dd>
+  <dt>生辰</dt>
+    <dd>
+      <input type="time" >
+    </dd>
+  <dt>照片</dt>
+    <dd>
+      <label>
+        点我上传照片，我比文件上传按钮好看
+        <input hidden type="file" accept="image/png">
+      </label>
+    </dd>
+  <dt>自我介绍</dt>
+  <dd><textarea name="comment" cols="37" rows="12">&lt;/taxttarea></textarea></dd>
+<fieldset disabled>
+  <legend>这里全部禁用了</legend>
+  <input type="text"><input type="text"><input type="text">
+</fieldset>
+<input type="submit" value="提交" ><input type="reset" value="重置" >
+<hr>
+<table border=5>
+  <col>
+  <col bgcolor="red">
+  <tbody>
+    <tr>
+      <th>编号</th>
+      <th>品名</th>
+      <th>进价</th>
+      <th>出价</th>
+    </tr>
+    <tr>
+      <th>aaa</th>
+      <td>a</td>
+      <td rowspan="2">a</td>
+      <td>a</td>
+    </tr>
+    <tr>
+      <th>a</th>
+      <td>a</td>
+      <td>a</td>
+    </tr>
+    <tr>
+      <th>a</th>
+      <td>a</td>
+      <td>a</td>
+      <td>a</td>
+    </tr>
+  </tbody>
+</table>
+<hr>
+<img  usemap="#mm" width="300" height="450" src="https://mingwangxc.github.io/miao/咖啡猫头鹰.jpg" >
+<map name="mm">
+  <area shape="rect" coords="78,107,186,180" href="www.jd.com" target="_blank">
+</map>
+<hr>
+<a href="https://www.mi.com/" target="iframe1">小米</a>
+<iframe name="iframe1" src="https://nodejs.org/en/" frameborder="1"></iframe>
+<p>aaa &nbsp;&nbsp; &nbsp; bbbb</p>
+<pre>aaa     bbbb</pre>
+>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<&lt;span>&lt;/span>
 </dl>
-
 </form>
-
-
-
-       </p>
-
-
-
-<div id="dibu"></div>
+</p>
+iv id="dibu"></div>
 </body>
 </html>
