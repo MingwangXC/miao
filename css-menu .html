@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+ <style>
+  * {
+    xbackground-color: rgba(0,0,0,0.08);
+    xbox-shadow: inset 0 0 1px red;
+  }
+  ul {
+    list-style: none;
+    padding:0;
+    margin:0;
+  }
+  .title > li{
+    display: inline-block;
+    margin-left: 20px;;
+  }
+  .title li{
+    position: relative;
+    white-space: nowrap;
+  }
+ .title ul {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    display: none;
+  }
+  ul li:hover > ul{
+    display: block;
+  }
+  .title ul ul{
+    left:100%;
+    top: 0;
+  }
+  .title, .title ul{
+    background-color:#3c3c3c;
+    color: #c4c4c4;
+  }
+  .title > li:hover {
+    background-color: rgb(69 70 70)  ;
+  }
+  .title ul li:hover{
+    background-color: #04395E;
+  }
+  .title ul li {
+    padding: 0 10px;
+
+  }
+  .title li > hr{
+    margin-left: -10px;
+    margin-right:-10px;
+    border: none;
+    border-top:1px solid #606060;
+
+
+ }
+
+
+
+
+
+ </style>
+</head>
+<body>
+
+    <ul class="title">
+      <li>文件
+        <ul>
+          <li>打开
+            <ul>
+              <li>新建打开</li>
+              <li>直接打开</li>
+              <li>保存打开
+                <ul>
+                  <li>打开</li>
+                  <li>保存</li>
+                  <li>另存为。。。</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <hr>
+          </li>
+          <li>保存</li>
+          <li>
+            <hr>
+          </li>
+          <li>另存为。。。</li>
+
+        </ul>
+      </li>
+      <li>查看
+        <ul>
+          <li>图片</li>
+          <li>
+            <hr>
+          </li>
+          <li>视频</li>
+          <li>
+            <hr>
+          </li>
+          <li>代码</li>
+        </ul>
+      </li>
+      <li>编辑
+        <ul>
+          <li>插入</li>
+          <li>
+            <hr>
+          </li>
+          <li>删除</li>
+          <li>
+            <hr>
+          </li>
+          <li>恢复</li>
+        </ul>
+      </li>
+      <li>退出
+        <ul>
+          <li>保存退出</li>
+          <li>
+            <hr>
+          </li>
+          <li>直接退出</li>
+          <li>
+            <hr>
+          </li>
+          <li>强行退出</li>
+        </ul>
+      </li>
+      <li>打开编辑器进行调试
+        <ul>
+          <li>:hover</li>
+          <li>
+            <hr>
+          </li>
+          <li>:focus</li>
+          <li>
+            <hr>
+          </li>
+          <li>:target</li>
+        </ul>
+      </li>
+
+    </ul>
+
+  <div></div>
+  <div></div>
+</body>
+</html>
