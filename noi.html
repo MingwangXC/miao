@@ -4,7 +4,7 @@
   var a = Number ( prompt ( `请输入a` ) )
   var b = Number ( prompt ( `请输入b` ) )
   var c = a + b
-  console.log(alert(c))
+  console.log(c)
 </script>
 
 <script type="x" id="ch0103/02">
@@ -12,7 +12,7 @@
   var b = Number ( prompt ( ` 请输入b ` ) )
   var c = Number ( prompt ( ` 请输入c ` ) )
   var d = ( a + b ) * c
-  console.log(alert(d))
+  console.log(d)
 </script>
 
 <script type="x" id="ch0103/03">
@@ -20,7 +20,7 @@
   var b = Number ( prompt ( `请输入b` ) )
   var c = Number ( prompt ( `请输入c ` ) )
   var d = (a+b)/c
-  console.log(alert(d))
+  console.log(d)
 </script>
 
 <script type="x" id="ch0103/04">
@@ -28,21 +28,21 @@
   var b = Number ( prompt ( ` 请输入被除数` ) )
   var c =a/b
   var d =a%b
-  console.log(alert(c.toFixed(0)),d)
+  console.log(c.toFixed(0),d)
 </script>
 
 <script type="x" id="ch0103/05">
   var a = Number ( prompt (`请输入分子`))
   var b = Number ( prompt (`请输入分母`))
   var c = a/b
-  console.log(alert(c.toFixed(9)))
+  console.log(c.toFixed(9))
 </script>
 
 <script type="x" id="ch0103/06">
   var a = Number (prompt(`请输入确诊数`))
   var b = Number (prompt(`请输入死亡数`))
-  var c = b/a
-  console.log(alert(`甲流死亡率为`+c.toFixed(3)+`%`))
+  var c = b/a*100
+  console.log(c.toFixed(3)+`%`)
 </script>
 
 <script type="x" id="ch0103/07">
@@ -52,13 +52,13 @@
   var c = Number (prompt(`请输入参数c的值`))
   var d = Number (prompt(`请输入参数d的值`))
   var f = a*(x*x*x)+b*(x*x)+c*x+d
-  console.log(alert(f.toFixed(7)))
+  console.log(f.toFixed(7))
 </script>
 
 <script type="x" id="ch0103/8">
   var f = Number (prompt(`请输入华氏温度`))
   var c = 5*(f-32)/9
-  console.log(alert(c.toFixed(5)))
+  console.log(c.toFixed(5))
 </script>
 
 <script type="x" id="ch0103/09">
@@ -73,20 +73,20 @@
   var r1 = Number (prompt(`请输入r1阻值`))
   var r2 = Number (prompt(`请输入r2阻值`))
   var R  = 1/(1/r1+1/r2)
-  console.log(alert(R.toFixed(2)))
+  console.log(R.toFixed(2))
 </script>
 
 <script type="x" id="ch0103/11">
   var a = Number (prompt(`请输入a的值`))
   var b = Number (prompt(`请输入b的值`))
   var r = a%b
-  console.log(alert(r.toFixed(4)))
+  console.log(r.toFixed(4))
 </script>
 
 <script type="x" id="ch0103/12">
   var r = Number (prompt(`请输入半径r`))
   var V=4/3*(3.14*r*r*r)
-  console.log(alert(V.toFixed(2)))
+  console.log(V.toFixed(2))
 </script>
 
 <script type="x" id="ch0103/13">
@@ -94,14 +94,14 @@
   var b1 = (a%1000-a%100)/100
   var b2 = (a%100-a%10)/10
   var b3 = (a%10-a%1)/1
-  console.log(alert(b3+``+b2+``+b1))
+  console.log(``+b3+b2+b1)
 </script>
 
 <script type="x" id="ch0103/14">
   var h = Number(prompt(`请输入桶深`))
   var r = Number(prompt(`请输入桶底半径`))
   var v = 20/((r*r*Math.PI*h)/1000)
-  console.log(alert(Math.ceil(v)))
+  console.log(Math.ceil(v))
 </script>
 
 <script type="x" id="ch0103/15">
@@ -109,7 +109,7 @@
   var x = Number(prompt(`请输入虫子吃苹果的速度`))
   var y = Number(prompt(`请输入虫子吃了多少小时`))
   var a = n-y/x
-  console.log(alert(Math.floor(a)))
+  console.log(Math.floor(a))
 </script>
 
 <script type="x" id="ch0103/16">
@@ -118,7 +118,7 @@
   var xb = Number(prompt(`请输入b点x坐标`))
   var yb = Number(prompt(`请输入b点y坐标`))
   var l =Math.sqrt((xa-xb)*(xa-xb)+(ya-yb)*(ya-yb))
-  console.log(alert(l.toFixed(3)))
+  console.log(l.toFixed(3))
 </script>
 
 <script type="x" id="ch0103/17">
@@ -129,7 +129,7 @@
   var x3 = Number(prompt(`请输入x3轴坐标`))
   var y3 = Number(prompt(`请输入y3轴坐标`))
   var s =1/2*(x1*y2+x2*y3+x3*y1-x1*y3-x2*y1-x3*y2)
-  console.log(alert(s.toFixed(2)))
+  console.log(s.toFixed(2))
 </script>
 
 <script type="x" id="ch0103/18">
@@ -137,23 +137,23 @@
   var a2 = Number(prompt(`请输入a2`))
   var n = Number(prompt(`请输入n`))
   var N =a1+(n-1)*(a2-a1)
-  console.log(alert(N))
+  console.log(N)
 </script>
 
 <script type="x" id="ch0103/19">
   var a = Number ( prompt (`请输入a`))
   var b = Number ( prompt (`请输入b`))
   var c = a*b
-  console.log(alert(c))
+  console.log(c)
 </script>
 
 <script type="x" id="ch0103/20">
   var n = Number(prompt(`请输入n`))
   var N =2**n
-  console.log(alert(N))
+  console.log(N)
 </script>
 
 <script type="" id="ch0104/01">
   var n =prompt(`请输入n`)
-  console.log(alert(n>0?`positive`:(n<0?`negative`:`zero`)))
+  console.log(n>0?`positive`:(n<0?`negative`:`zero`))
 </script>
