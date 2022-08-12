@@ -249,20 +249,224 @@
 <script type="x" id="ch0104/09">
   var n = Number(prompt(`请输入n`))
 
-  if (n%3 == 0) {
-    if (n%5 == 0) {
-      if (n%7 == 0)
-    } console.log(3 + ` ` + 5 + ` ` + 7)
-  } else if (n%5 == 0){
-    console.log(3 + ` `+ 5)
-  } else if (n%7 == 0) {
+  if (n%3 == 0 && n%5 == 0 && n%7 == 0) {
     console.log(3 + ` ` + 5 + ` ` + 7)
+  } else if (n%3 == 0 && n%5 == 0 && n%7 !== 0) {
+    console.log(3 + ` ` + 5)
+  } else if (n%3 == 0 && n%5 !== 0 && n%7 == 0) {
+    console.log(3 + ` ` +7)
+  } else if (n%3 == 0 && n%5 !== 0 && n%7 !== 0) {
+    console.log(3)
+  } else if (n%3 !== 0 && n%5 == 0 && n%7 !== 0) {
+    console.log(5)
+  } else if (n%3 !== 0 && n%5 !== 0 && n%7 == 0) {
+    console.log(7)
+  } else {
+    console.log(`n`)
   }
 </script>
 
-<script type="" id="ch0104/10">
+<script type="x" id="ch0104/10">
   var a = Number(prompt(`请输入语文课成绩`))
   var b = Number(prompt(`请输入数学课成绩`))
 
+  if (a >= 60 && b >= 60 ) {
+    console.log(0)
+  } else if (a < 60 && b <60) {
+    console.log(1)
+  } else {
+    console.log(1)
+  }
+</script>
 
+<script type="x" id="ch0104/11">
+  var n = Number(prompt(`请输入约会星期几`))
+
+  if (n == 1 || n == 3 || n == 5) {
+    console.log(`NO`)
+  } else {
+    console.log(`YES`)
+  }
+</script>
+
+<script type="x" id="ch0104/12">
+  var n = Number(prompt(`请输入办事距离`))
+  var B = n / 3 + 50
+  var W = n / 1.2
+
+  if (B > W) {
+    console.log(`Walk`)
+  } else if (B < W) {
+    console.log(`Bike`)
+  } else {
+    console.log(`All`)
+  }
+</script>
+
+<script type="x" id="ch0104/13">
+  var n = Number(prompt(`请输入浮点数n`))
+
+  if (n < 5) {
+    var y = -n + 2.5
+    console.log(y.toFixed(3))
+  } else if (n < 10) {
+    var y = 2 - 1.5 * (n-3) *(n-3)
+    console.log(y.toFixed(3))
+  } else if (n < 20) {
+    var y = n / 2 - 1.5
+    console.log (y.toFixed(3))
+  }
+</script>
+
+<script type="x" id="ch0104/14">
+  var g = Number(prompt(`请输入邮件重量`))
+  var j = prompt(`是否加急y/n`)
+  var m = (g - 1000) / 500
+
+  if (j == `y`) {
+    console.log(Math.ceil(m) * 4  + 8 + 5)
+  } else {
+    console.log(Math.ceil(m) * 4 + 8)
+  }
+</script>
+
+<script type="x" id="ch0105/01">
+  var n = Number(prompt(`请输入学生人数`))
+  var ages = 0
+  var counter = 1
+
+  while (counter <= n) {
+    var age = Number(prompt(`请输入第`+ counter + `个人的年龄`))
+    ages = ages + age
+    counter = counter + 1
+  }
+
+    var Pages = ages / n
+
+    console.log(Pages.toFixed(2))
+</script>
+
+<script type="x" id="ch0105/02">
+  var n = 1
+  var nm = 0
+
+  while (n <= 12) {
+    var m = Number(prompt(`请输入第` + n + `个月的工资数`))
+    var n = n + 1
+    var nm = nm + m
+  }
+  var pnm = nm / 12
+  console.log(pnm.toFixed(2) + `$`)
+</script>
+
+<script type="x" id="ch0105/03">
+  var n = Number(prompt(`请输入数据行数`))
+  var c = 0
+  var conter = 1
+
+  while (conter <= n){
+    var a = Number(prompt(`请输入第` + conter + `行数据`))
+    var conter = conter + 1
+    var c = c + a
+  }
+  var p = c / n
+  console.log(p.toFixed(2))
+</script>
+
+<script type="x" id="ch0105/04">
+  var n = Number(prompt(`请输入行数`))
+  var c = 0
+  var b = 1
+
+  while (b <= n) {
+    var a = Number(prompt(`请输入第` + b + `行数值`))
+    var b = b + 1
+    var c = a + c
+  }
+  var p = c / n
+  console.log(c.toFixed(5) + ` ` + p.toFixed(5))
+</script>
+
+<script type="x" id="ch0105/05">
+  var n = Number(prompt(`请输入考试人数`))
+  var A = 1
+  var max = 0
+
+  while (A <= n) {
+    var a = Number(prompt(`请输入第`+ A +`个学生成绩`))
+    var A = A + 1
+    if (a > max) {
+      max = a
+    }
+  }
+  console.log(max)
+</script>
+
+<script type="x" id="ch0105/06">
+  var n = Number(prompt(`请输入序列个数`))
+  var max = 0
+  var min = 0
+  var conter = 1
+
+  while (conter <= n) {
+    var a = Number(prompt(`请输入第` + conter + `个数值`))
+    if (a > max) {
+      max = a
+    } else if ( a < min) {
+      min = a
+    }
+    conter = conter + 1
+  }
+  c = max - min
+  console.log(c)
+</script>
+
+<script type="x" id="ch0105/07">
+  var n = Number(prompt(`请输入比赛天数`))
+  var A = 0
+  var B = 0
+  var C = 0
+  var T = 1
+
+  while (T <= n) {
+    var a = Number(prompt(`请输入第`+ T +`天的金牌数`))
+    var b = Number(prompt(`请输入第`+ T +`天的银牌数`))
+    var c = Number(prompt(`请输入第`+ T +`天的铜牌数`))
+    T = T + 1
+    A = A + a
+    B = B + b
+    C = C + c
+    Z = A + B + C
+  }
+  console.log(A + ` ` + B + ` ` + C + ` ` + Z)
+</script>
+
+<script type="x" id="ch0105/08">
+  var n = Number(prompt(`请输入多边形角数`))
+  var v = 1
+  var s = 0
+
+  while (v < n) {
+    var a = Number(prompt(`请输入第` + v + `个角的度数`))
+    var v = v + 1
+    var s = s + a
+    var d = ((n - 2) * 180) - s
+  }
+  console.log(d)
+</script>
+
+<script type="" id="ch0105/09">
+  var m = Number(prompt(`请输入m的值`))
+  var n = Number(prompt(`请输入n的值`))
+  var s = 0
+  if (m % 2 == 0) {
+    m = m + 1
+  }
+  var h = m
+
+  while (h <= n) {
+    s = s + h
+    h = h + 2
+  }
+  console.log(h)
 </script>
