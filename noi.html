@@ -408,7 +408,7 @@
   var max = -Infinity
   var min = Infinity
 
-  for (conter = 1 ; conter <= n) ; conter = conter + 1) {
+  for (conter = 1 ; conter <= n) ; conter = (conter + 1) {
     var a = Number(prompt(`请输入第` + conter + `个数值`))
     if (a > max) {
       max = a
@@ -561,7 +561,7 @@
   for (var i = 1; i <= 20; i++) {
     y += n
     if (house <= y) {
-      s = true
+      go = true
       console.log(i)
       break
     }
@@ -620,7 +620,7 @@
   console.log(Math.ceil(time))
 </script>
 
-<script type="x" id="ch0105/20">
+<script type="" id="ch0105/20">
   var h = Number(prompt(`请输入离地高度`))
   var l = h
   var L = 0
@@ -632,11 +632,12 @@
       L10 = l
     }
   }
-  console.log(L + h - 2 * L10)
-  console.log(L10)
+  m = L + h - 2 * L10
+  console.log(m.toFixed(4))
+  console.log(L10.toFixed(7))
 </script>
 
-<script type="" id="ch0105/21">
+<script type="x" id="ch0105/21">
   var N = Number(prompt(`请输入N的数值`))
   for ()
 </script>
