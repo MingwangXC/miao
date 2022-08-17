@@ -620,7 +620,7 @@
   console.log(Math.ceil(time))
 </script>
 
-<script type="" id="ch0105/20">
+<script type="x" id="ch0105/20">
   var h = Number(prompt(`请输入离地高度`))
   var l = h
   var L = 0
@@ -639,5 +639,115 @@
 
 <script type="x" id="ch0105/21">
   var N = Number(prompt(`请输入N的数值`))
-  for ()
+  while (N !== 1) {
+    if (N % 2 == 1) {
+      var str = N + `*3+1`= + (n = n * 3 + 1)
+      console.log(str)
+    } else if (N % 2 == 0) {
+      var str = N + `/2=` + (N = N / 2)
+      console.log(str)
+    }
+  }
+
+</script>
+
+<script type="x" id="ch0105/22">
+  var money = 0
+  var mm = 0
+  var p = false
+
+  for (var i = 1; i <= 12; i++) {
+    money += 300
+    var y = Number(prompt(`请输入第`+ i +`月预算`))
+    if (money < y) {
+      p = true
+      console.log(-i)
+      break
+    } else {
+      money -= y
+      var DMoney = money - money % 100
+      money -= DMoney
+      mm += DMoney
+    }
+  }
+  if(!p){
+    console.log(money + DMoney * 1.2)
+  }
+</script>
+
+<script type="x" id="ch0105/23">
+  var m = Number(prompt(`请输入每天的药品数量`))
+  var n = Number(prompt(`请输入取药的人数`))
+  var count = 0
+
+  for (var i = 1; i <= n; i++) {
+    var num = Number (prompt(`请输入第`+ i +`人取药的数量`))
+
+    if (m >= num) {
+      m -= num
+    } else {
+      count++
+    }
+  }
+  console.log(count)
+</script>
+
+<script type="x"  id="ch0105/24">
+  var n = Number(prompt(`请输入测量数据的数量`))
+  var max = 0
+  var maxa = 0
+  for (var i = 1; i <= n; i++) {
+    var up = Number(prompt(`请输入第` + i + `次收缩压`))
+    var D = Number(prompt(`请输入第` + i + `次舒张压`))
+
+    var j = false
+
+    if (D >= 60 && D <= 90 && up >= 90 && up <= 140) {
+      j = true
+    }
+    if (!j ) {
+      maxa = 0
+    } else {
+      maxa++
+      if (maxa > max) {
+        max = maxa
+      }
+    }
+  }
+  console.log(max)
+</script>
+
+<script type="x" id="ch0105/25">
+  for (var x = 81; x <=342; x++) {
+    var a7 = x % 7
+    var b7 = (x - a7) / 7 % 7
+    var c7 = (x - a7 - b7 * 7) / 7 / 7 % 7
+
+    var a9 = x % 9
+    var b9 = (x - a9) / 9 % 9
+    var c9 = (x - a9 - b9 * 9) / 9 / 9 % 9
+
+    if (a7 == c9 && c7 == a9 && b7 == b9) {
+      console.log(x)
+      console.log(`` + c7 + b7 + a7)
+      console.log(`` + c9 + b9 + a9)
+      break
+    }
+  }
+</script>
+
+<script type="" id="ch0105/26">
+  var n = Number(prompt(`请输入数值的数量`))
+  var count = 0
+  for (var i = 1; i <= n; i++) {
+    var num = Number(prompt(`请输入第` + i + `个四位数`))
+    var a1 = num % 10
+    var a2 = (num - a1) / 10 % 10
+    var a3 = (num - a1 - a2 * 10) / 10 / 10 % 10
+    var a4 = (num - a1 - a2 * 10 - a3 * 100) / 10 /10 /10 % 10
+    if (a1 - a4 - a3 - a2 > 0) {
+      count++
+    }
+  }
+  console.log(count)
 </script>
