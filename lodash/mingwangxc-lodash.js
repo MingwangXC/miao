@@ -60,6 +60,14 @@ var mingwangxc = {
   },
 
 
+  head : function (array) {
+    if (array[0]) {
+      return array
+    }
+  },
+
+
+
 
 
 
