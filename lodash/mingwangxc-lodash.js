@@ -17,4 +17,15 @@ var mingwangxc = {
     }
     return result
   }
+
+
+
+  flatten: function (array) {
+    var result = []
+    for (var i = 0; i < array.length; i++) {
+      var item = array[i]
+      result = result.concat(item)
+    }
+    return result
+  }
 }
