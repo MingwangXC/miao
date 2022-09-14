@@ -32,10 +32,33 @@ var mingwangxc = {
 
 
 
-  fill: function (array,value,start = 0, end = array.length) {
+  fill: function (array, value, start = 0, end = array.length) {
     for (var i = start; i < end; i++) {
       array[i] = value
     }
     return array
   }
+
+
+  compact : function (array) {
+    var count = []
+    for (var i = 0; i < array.length; i++) {
+      if (array[i]) {
+        count.push(array[i])
+      }
+    }
+    return count
+  }
+
+
+  drop : function (array, n = 1) {
+    var count = []
+    for (var i = n; i < array.length; i++) {
+      count.push(array[i])
+    }
+    return count
+  }
+
+
+
 }
