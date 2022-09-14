@@ -1,13 +1,13 @@
 var mingwangxc = {
   chunk: function (array, size = 1) {
-    var result = [],
-      level = [],
-      j = 0;
-    for (i = 0; i < array.length; i++) {
-      level.push(array[i]);
-      j++;
+    var result = []
+    var level = []
+    var j = 0
+    for (var i = 0; i < array.length; i++) {
+      level.push(array[i])
+      j++
       if (j >= size) {
-        j = 0;
+        j = 0
         result.push(level)
         level = []
       }
@@ -15,7 +15,6 @@ var mingwangxc = {
     if (j != 0) {
       result.push(level)
     }
-    return result
 
-   }
   }
+}

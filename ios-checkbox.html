@@ -13,14 +13,15 @@ div {
   border:3px solid rgb(186,186,186,10);
   height:150px;
   width:250px;
-  margin:500px auto;
+  margin:300px auto;
   padding:0;
-  border-radius:100px
+  border-radius:100px;
+  position:relative;
 
 
 }
-a{
-  position:absouute;
+button{
+  position:absolute;
   margin-top:5px;
   margin-left:6px;
   display:inline-block;
@@ -31,30 +32,43 @@ a{
   border-radius:100px;
   transition:ease 0.3s;
   box-shadow:1px 3px 10px 1px;
-
-
-
 }
-div:hover {
+ span {
+   margin-left:-5px;
+   margin-top: -5px;
+   display:inline-block;
+   height: 156px;
+   width: 256px;
+   border:1px solid white;
+   border-radius:100px;
+}
+  input:checked + span{
+
+
+  border: 1px solid red;
   background-color:rgb(65,247,93);
   transition:east-out 0.5s;
   border-color:rgb(65,247,93);
 
 
 }
-div:hover a{
-  transition: ease 0.3s;
-  margin-left:94px;
-
+   input:checked + button {
+  transition: ease 0.5s;
+ margin-left:94px;
 }
   </style>
 </head>
 <body>
+
+
   <div>
-    <a href:"">
+   <input type="checkbox" id="a1">
+   <label class="y1" for="a1">
 
-    </a>
+     <button></button>
+   </label>
 
+    <span></span>
   </div>
 
 </body>

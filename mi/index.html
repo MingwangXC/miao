@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="my-iconfont.css">
+  <style type="text/less">
+    body{
+      margin:0;
+      overflow-y:scroll ;
+      font: 14px/1.5 Helvetica Neue,Helvetica,Arial,Microsoft Yahei,Hiragino Sans GB,Heiti SC,WenQuanYi Micro Hei,sans-serif;
+    }
+    .top-black{
+      background-color:#333333;
+      width:100%;
+      margin: 0;
+      padding:0;
+      box-shadow: border-box;
+      .top{
+        margin: auto;
+        width:1226px;
+        height:40px;
+        display:flex;
+        justify-content:space-between;
+        font-size: 12px;
+        background-color:#333333;
+          .top-left{
+            .app{
+              .bottom{
+                transition: 10s;
+                display:none;
+                margin-top:-16px;
+                margin-left:15px;
+                width:0px;
+                height:0px;
+                border:8px solid transparent;
+                border-bottom:8px solid white;
+              }
+              position:relative;
+              &:hover .d-quick{
+                transition:10s;
+                color: white;
+                .bottom{
+                  transition:  0s 10s;
+                  display:block;
+                  height:2px;
+                }
+              }
+              &:hover  .quick{
+                transition:0.6s;
+                height: 150px;
+                display: inline-block;
+              }
+              .quick{
+                box-shadow: 0 0 3px 0px black;
+                transition:0.3s 0s;
+                width: 126px;
+                height: 0px;
+                overflow:hidden;
+                position:absolute;
+                font-size: 16px;
+                text-align:center;
+                top:40px;
+                left:-38px;
+                .A{
+                  display:block;
+                  margin:  auto;
+                  margin-top: 20px;
+                  width: 90px;
+                  height:90px;
+                }
+            }
+            }
+          }
+
+        div{
+          display:inline-block;
+        }
+        a{
+          display: inline-block;
+          color: #b0b0b0;
+          line-height: 40px;
+          text-decoration: none;
+          &:hover{
+            color:white;
+          }
+        }
+        span{
+          color:#424242;
+          margin:auto 0.3em;
+        }
+        .top-reight{
+           display:flex;
+          .shopping{
+            position:relative;
+            &:hover #shopping-cart{
+              transition:  0s ;
+              background-color:white;
+              color:#ff6700 ;
+              .icon{
+                      color:#ff6700;
+                      transition:  0s ;
+                    }
+            }
+            &:hover .shopping-bottom{
+                height: 100px;
+                padding:40px 0 40px;
+            }
+            #shopping-cart{
+              margin-left: 20px;
+              width: 120px;
+              background-color: #424242;
+              text-align:center;
+              height: 40px;
+              transition:  0s 0.2s ;
+            }
+            .shopping-bottom{
+              box-sizing:border-box;
+              overflow: hidden;
+              transition:0.2s;
+              position:absolute;
+              width: 320px;
+              right: 0;
+              top: 40px;
+              height: 0;
+              background-color:white;
+              box-shadow: 0 0 3px 0px black ;
+              z-index: -10;
+              text-align: center;
+              &:hover{
+                height: 100px;
+                padding:40px 0 40px;
+                }
+            }
+            .icon{
+              transition:  0s 0.2s ;
+              color: #b0b0b0;
+              font-size: 20px;
+              vertical-align:bottom;
+            }
+          }
+        }
+      }
+    }
+  </style>
+</head>
+<script src="less.js"></script>
+<body>
+  <div class="top-black">
+    <div class="top">
+      <div class="top-left">
+        <a href="https://www.mi.com/"> 小米官网</a>
+        <span>|</span>
+        <a href="https://www.mi.com/shop"> 小米商城</a>
+        <span>|</span>
+        <a href="https://www.miui.com/"> MIUI</a>
+        <span>|</span>
+        <a href="https://iot.mi.com/"> IoT</a>
+        <span>|</span>
+        <a href="https://i.mi.com/"> 云服务</a>
+        <span>|</span>
+        <a href="https://airstar.com/home"> 天星数科</a>
+        <span>|</span>
+        <a href="https://youpin.mi.com/"> 有品</a>
+        <span>|</span>
+        <a href="https://xiaoai.mi.com/"> 小爱开放平台</a>
+        <span>|</span>
+        <a href="https://qiye.mi.com/"> 企业团购</a>
+        <span>|</span>
+        <a href="https://www.mi.com/aptitude/list/?id=88"> 资质证照</a>
+        <span>|</span>
+        <a href="https://www.mi.com/aptitude/list/?id=88"> 协议规则</a>
+        <span>|</span>
+        <div class="app" >
+          <a href="https://www.mi.com/appdownload/" class="d-quick">下载app
+            <span class="bottom"></span>
+          </a>
+          <div class="quick">
+            <img src="https://i1.mifile.cn/f/i/17/appdownload/download.png?1" class="A">  小米商城APP
+          </div>
+        </div>
+        <span>|</span>
+        <a href="javascript:;">Select Location
+      </div>
+      <div class="top-reight">
+        <div>
+          <a href="javascript:void(0);">登录</a>
+          <span>|</span>
+          <a href="javascript:void(0);">注册</a>
+          <span>|</span>
+          <a href="javascript:void(0);">消息通知</a>
+        </div>
+        <div class="shopping">
+          <a href="" id="shopping-cart">
+          <span class="icon icon-shopping-cart"></span> 购物车 (0)
+          </a>
+          <div class="shopping-bottom">购物车中还没有商品，赶紧选购吧!
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
