@@ -16,7 +16,7 @@ var mingwangxc = {
       result.push(level)
     }
     return result
-  }
+  },
 
 
 
@@ -27,7 +27,7 @@ var mingwangxc = {
       result = result.concat(item)
     }
     return result
-  }
+  },
 
 
 
@@ -37,7 +37,7 @@ var mingwangxc = {
       array[i] = value
     }
     return array
-  }
+  },
 
 
   compact : function (array) {
@@ -48,7 +48,7 @@ var mingwangxc = {
       }
     }
     return count
-  }
+  },
 
 
   drop : function (array, n = 1) {
@@ -57,7 +57,7 @@ var mingwangxc = {
       count.push(array[i])
     }
     return count
-  }
+  },
 
 
 
