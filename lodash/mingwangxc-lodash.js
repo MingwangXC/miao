@@ -4,7 +4,7 @@ var mingwangxc = {
     var level = []
     var j = 0
     for (i = 0; i < array.length; i++) {
-      level.push(array[i]);
+      level.push(array[i])
       j++
       if (j >= size) {
         j = 0
