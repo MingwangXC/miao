@@ -64,7 +64,24 @@ var mingwangxc = {
     if (array[0]) {
       return array
     }
+    return array
   },
+
+
+  indexOf: function (array,searchElement,fromIndex = 0) {
+    n = fromIndex
+    if (n < 0) {
+      n = array.length + n
+    }
+    for (var i = n; i < array.length;i++) {
+      if (array[i] === searchElement) {
+        return i
+      }
+    }
+    return -1
+  },
+
+
 
 
 
