@@ -94,6 +94,29 @@ var mingwangxc = {
 
 
 
+  join : function (array,char = `,`) {
+    var sum = ``
+    for (var i = 0; i < array.length - 1; i++) {
+      sum = sum + String(array[i])  + char
+    }
+    return sum + String(array[i])
+  },
+
+
+
+  last : function (array) {
+    if (array.length == 0) {
+      return array
+    }
+    return (array[array.length - 1])
+  },
+
+
+
+
+
+
+
 
 
 
