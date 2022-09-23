@@ -62,7 +62,7 @@ var mingwangxc = {
 
   head : function (array) {
     if (array[0]) {
-      return array
+      return array[0]
     } else {
       return array
     }
@@ -120,11 +120,11 @@ var mingwangxc = {
   pull: function (array, value) {
     var ary = []
     for (var i = 0; i < array.length; i++) {
-      if (array[i] !== value) {
-        array = ary.push(array[i])
+      if (array[i] != value) {
+        ary.push(array[i])
       }
     }
-    return array
+    return ary
   },
 
 
