@@ -125,7 +125,7 @@ var mingwangxc = {
       }
     }
     return array
-  }，
+  },
 
 
 
