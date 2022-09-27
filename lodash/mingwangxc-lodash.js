@@ -61,7 +61,9 @@ var mingwangxc = {
 
 
   head : function (array) {
-    if (array[0]) {
+    if (array == null){
+
+    }else {
       return array[0]
     }
 
@@ -118,7 +120,9 @@ var mingwangxc = {
   pull: function (array, value) {
     var ary = []
     for (var i = 0; i < array.length; i++) {
-      if (array[i] != value) {
+      if (value.includes(array[i])){
+
+      } else {
         ary.push(array[i])
       }
     }
@@ -131,3 +135,6 @@ var mingwangxc = {
 
 
 }
+
+
+exceptions 错误和异常
