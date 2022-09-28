@@ -121,7 +121,6 @@ var mingwangxc = {
     var ary = []
     for (var i = 0; i < array.length; i++) {
       if (value.includes(array[i])){
-
       } else {
         ary.push(array[i])
       }
@@ -135,6 +134,3 @@ var mingwangxc = {
 
 
 }
-
-
-exceptions 错误和异常
