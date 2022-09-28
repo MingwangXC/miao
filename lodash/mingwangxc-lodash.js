@@ -117,16 +117,17 @@ var mingwangxc = {
 
 
 
-  pull: function (array, value) {
-    var ary = []
+  pull: function (array, ...values) {
+    var newAry = []
     for (var i = 0; i < array.length; i++) {
-      if (value.includes(array[i])){
+      if (values.includes(array[i])) {
 
       } else {
-        ary.push(array[i])
+        newAry.push(array[i])
       }
     }
-    return ary
+    return newAry
+  }
   },
 
 
