@@ -127,12 +127,6 @@ var mingwangxc = {
       }
     }
     return newAry
-  }
   },
-
-
-
-
-
 
 }
