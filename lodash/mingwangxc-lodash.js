@@ -129,4 +129,34 @@ var mingwangxc = {
     return newAry
   },
 
+  revers : function (array) {
+    if (array.length <= 1) {
+      return array
+    }
+    var l = array.length
+    var newAry = []
+    for (var i = 0; i < l; i++) {
+      newAry.push(array[l - 1 -i])
+    }
+    return newAry
+  },
+
+  uniq : function (array) {
+    return [...new Set(array)]
+  },
+
+  nth : function(array, n = 0) {
+    if (n < 0) {
+      n = array.length + n
+    } else {
+      return array[n]
+    }
+  },
+
+
+
+
+
+
+
 }
